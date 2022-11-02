@@ -1,0 +1,18 @@
+[
+  {
+    " firstName": "Janet",
+    "lastName": "Egbeigwe",
+    "Age": 30,
+    "height": 99
+  },
+  {
+    " firstName": "Frank",
+    "lastName": "Anyalebechi",
+    "Age": 30
+  },
+  {
+    " firstName": "Janet",
+    "lastName": " ",
+    "Age": 30 
+  }
+]
