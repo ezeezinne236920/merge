@@ -9,7 +9,7 @@ function ageInDays() {
   );
   h1.setAttribute("id", "ageInDays");
   h1.appendChild(textAnswer);
-  document.getElementById("btn").appendChild(h1);
+  document.getElementById("blue").appendChild(h1);
 }
 function reset() {
   document.getElementById("ageInDays").remove();
@@ -149,21 +149,21 @@ function rpsfrontend(humanImageChoice, botImageChoice, finalMessage) {
 
 // challenge four: change the color of all buttons!!!
 var all_buttons = document.getElementsByTagName("button");
-console.log(all_buttons);
+// console.log(all_buttons);
+
 var copyAllButtons = [];
 for (let i = 0; i < all_buttons.length; i++) {
   copyAllButtons.push(all_buttons[i].classList[1]);
-  console.log(copyAllButtons);
+  // console.log(copyAllButtons);
 }
 console.log(copyAllButtons);
-// all_buttons.classList;
-// console.log(all_buttons.classList);
+
 function buttonColorChange(buttonThingy) {
   if (buttonThingy.value === "red") {
     buttonsRed();
   } else if (buttonThingy.value === "green") {
     buttonGreen();
-  } else if (buttonThingy.value === "reset") {
+  } else if (buttonThingy.value === " reset") {
     buttonColorReset();
   } else if (buttonThingy.value === "random") {
     randomColors();
@@ -172,7 +172,7 @@ function buttonColorChange(buttonThingy) {
 
 function buttonsRed() {
   for (let i = 0; i < all_buttons.length; i++) {
-    all_buttons[i].classList.remove(all_buttons[i].classList[i]);
+    all_buttons[i].classList.remove(all_buttons[1].classList[1]);
     all_buttons[i].classList.add("red");
   }
 }
@@ -181,4 +181,10 @@ function buttonGreen() {
     all_buttons[i].classList.remove(all_buttons[i].classList[i]);
     all_buttons[i].classList.add("green");
   }
+  // }
+  // function buttonColorReset() {
+  //   for (let i = 0; i < all_buttons.length; i++) {
+  //     all_buttons[i].classList.remove(all_buttons[i].classList[1]);
+  //     all_buttons[i].classList.add("green");
+  //   }
 }
