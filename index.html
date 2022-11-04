@@ -17,26 +17,32 @@
         <h1>challenge1: your age in Days</h1>
         <section>
           <div>
-            <button id="btn" onclick="ageInDays()">click me</button>
+            <button id="btn-primary" class="yellow" onclick="ageInDays()">click me</button>
            </div>
-            <div><button class="brown" onclick="howOld()">click again</button>
+            <div><button class="blue" onclick="howOld()">click again</button>
           </div>
           <div>
-            <button class="bts" onclick="reset()">reset</button>
+            <button class="red" onclick="reset()">reset</button>
           </div>
           <div>
-            <button onclick="cancelYear()">cancel year</button>
+            <button class="green" onclick="cancelYear()">cancel year</button>
           </div>
+            <!-- <div>
+          <button id="flex-box-result"></button>
+            </div> -->
+        <div>
+          <button id="reclick" onclick="reclick">     .     </button>
+        </div>
       </section>
       </div>
       <div class="challeenge">
         <h1>challenge2: Cat Generator</h1>
       
         <header>
-          <button  onclick="generateCat()">generate cat</button>
+          <button class="blue" onclick="generateCat()">generate cat</button>
           
           <div>
-           <button id="catGen" onclick="catGen()">hallo</button>
+           <button class="yellow" id="catGen" onclick="catGen()">hallo</button>
           </div>
         </header>
           <p id="cat-images" > </p>
@@ -44,20 +50,34 @@
      </div>
         <div class="challeenge">
          <h1>challenge3: Rock paper Scissors</h1>
-        </div>
-        <section class="rpsgame">
-          
-          <img src="images/rock.jpg" id="rock"  onclick="rpsGame(this)" alt="">
-          <img src="images/paper.jpeg" id="paper"  onclick="rpsGame(this)"  alt="">
-          <img src="images/scissors.jpeg"  id="scissors"  onclick="rpsGame(this)"  alt="">
-        </section>
-        <div>
-          <button id="flex-box-result"></button>
-        </div>
-    <div>
-      <button id="reclick" onclick="reclick"></button>
+        
+         <section class="rpsGame" id="rpsimages">
+          <img src="images/rock.jpg"   id="rock"  onclick="rpsGame(this)" alt="">
+          <img src="images/paper.jpeg"   id="paper"  onclick="rpsGame(this)"  alt="">
+          <img src="images/scissors.jpeg" id="scissors"  onclick="rpsGame(this)"  alt="">
+         </section>
+      </div>
+       <div class="challeenge four">
+        <h2 id="change-my-color">challenge4: change the color of all buttons!!</h2> </div>
+        <div class="flexbox-pickcolors">
+        <form action="">
+          <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+            <option value="random">Random</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="reset">Reset</option>
+          </select>
+          </form>
+          <button class="yellow">wee!</button>
+          <button class="green">yahoo!</button>
+          <button class="red">google!</button>
+          <button class="blue">facebook!</button>
+          </div>
+      
+      
+   
     </div>
-    <script src="script.js"></script>
-    </div>
+     <script src="script.js"></script>
+     <div style="margin-top:500px"></div>
   </body>
 </html>
